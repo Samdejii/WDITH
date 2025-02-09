@@ -1,0 +1,126 @@
+/* Define brand colors (adjust these values if needed) */
+:root {
+  --techhub-blue: #002855;   /* Dark blue */
+  --techhub-gold: #EAAA00;   /* Gold */
+  --light-gray: #f2f5f3;
+}
+
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* Center the login form vertically and horizontally */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* Optional: add a dark overlay for readability */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Center the logo within its container */
+.logo-container {
+  text-align: center;      /* Centers the inline image inside this div */
+  margin-bottom: 1rem;     /* Adds some spacing between the logo and the rest of the card */
+  width: 100%;
+}
+
+.logo-container img {
+  display: block;       /* Make the image a block element */
+  margin: 0 auto;
+  max-width: 200px;        /* Limit the maximum width of the logo */
+  width: 100%;             /* Responsive width */
+  height: auto;            /* Maintain aspect ratio */
+}
+
+/* Style the login card */
+.login-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--techhub-blue);
+}
+
+/* Form input groups */
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--techhub-blue);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Style the login and facial buttons */
+.login-btn, .face-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--techhub-blue);
+  color: #fff;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover, .face-btn:hover {
+  background-color: #d09c00;  /* Slightly darker gold on hover */
+}
+
+/* Separator between login and facial sections */
+.separator {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Facial recognition section styles */
+.facial-login h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--techhub-blue);
+}
+
+.face-placeholder {
+  border: 2px dashed #ccc;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background: #fafafa;
+  color: #999;
+}
